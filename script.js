@@ -1,10 +1,7 @@
-/* to move the profile picture from the right to the left when you scroll to the projects page
-as the profile picture partially covers the projects */
-//close all the open project details
 document.querySelectorAll("details[open]").forEach(d => d.removeAttribute("open"));
 var profilePicture = document.getElementById("profilePicture");
 
-// if it is not the template
+
 if (window.location.host.toLowerCase() !== "portfolio-template-site.bookie0.repl.co" && window.location.hash.toLowerCase().trim() !== "#edit")  {
     document.querySelectorAll(".for-edit").forEach(d => d.remove());
     document.getElementById("toggleEdit").remove();
@@ -13,11 +10,11 @@ refreshIcons();
 var profilePictureSwitch;
 profilePictureSwitch = document.getElementById("projectsPage").parentElement.offsetTop;
 
-window.addEventListener("scroll", function () // checks for scroll
+window.addEventListener("scroll", function () 
 {	
-	if (window.scrollY >= profilePictureSwitch) // if the user gets to the projects page
+	if (window.scrollY >= profilePictureSwitch)
 	{
-		profilePicture.classList.remove("right"); // uses DOM to change the profile picture to the left
+		profilePicture.classList.remove("right"); 
 		profilePicture.classList.add("left");
 	}
 	else if (window.scrollY)
@@ -43,7 +40,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-// returns whether or not the document is in edit mode
 function allowingEdit() {
     return document.body.className.includes('edit');
 }
