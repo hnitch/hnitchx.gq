@@ -31,16 +31,15 @@
     <div id="showEditMode" class="for-edit">Editing mode</div>
 
 
-    <img id="profilePicture" src="Images/profilePicture.jpg" class="right"> <!-- profile picture -->
+    <img id="profilePicture" src="https://i.imgur.com/h5ZzHVi.jpeg" class="right">
 
     <main>
-			<!-- home page -->
-      <section style="background-image: url('Images/Background Images/backgroundImage1.jpg');">
+      <section style="background-image: url('https://i.imgur.com/deHXvAr.jpeg');">
 
-				<h1 id="name" ref="name">Your Name Here</h1> <!-- add your name here -->
+				<h1 id="name" ref="name">hnitchx.gq</h1>
 
 				<div class="for-edit">
-					<br><label style="margin-left: 10px;">Profile picture image source</label><br>
+					<br><label style="margin-left: 10px;">Pfp</label><br>
 					<input class="input-edit for-edit  input-profilePictureSource" placeholder="Image source: " value="Images/profilePicture.jpg" oninput="refreshProfilePicture(event);">
 					<br>
 				</div>
@@ -54,256 +53,65 @@
 				<a class="for-edit" id="download_button" onclick="document.querySelector('version').innerText += 1;allowEdit(false);this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" download="portfolio.html"><i class="fas fa-download fa-2x"></i> Download</a>
 
 
-				<ul id="menu"> <!-- links to the pages -->
-					<li class="links"><a href="javascript: document.querySelector('#homePage').scrollIntoView();" class="topLinks">Home</a></li>
+				<ul id="menu"> 
+					<li class="links"><a href="javascript: document.querySelector('#homePage').scrollIntoView();" class="topLinks">home 🏡</a></li>
 
-					<li class="links"><a href="javascript: document.querySelector('#aboutPage').scrollIntoView();" class="topLinks">About</a></li>
+					<li class="links"><a href="javascript: document.querySelector('#aboutPage').scrollIntoView();" class="topLinks">about</a></li>
 
-					<li class="links"><a href="javascript: document.querySelector('#projectsPage').scrollIntoView();" class="topLinks">Projects</a></li>
-
-					<li class="links"><a href="javascript: document.querySelector('#contactPage').scrollIntoView();" class="topLinks">Contact</a></li>
+					<li class="links"><a href="javascript: document.querySelector('#contactPage').scrollIntoView();" class="topLinks">contact</a></li>
 				</ul>	
       </section>	
 
-			<!-- about page -->
+		
       <section style="background-image: url('Images/Background Images/backgroundImage2.jpg');">
 				<div id="aboutPage">
 					<h2 id="aboutPageTitle">About</h2>
 
-					<!-- add text about yourself here -->
-					<p ref="aboutIntroduction">Tell us about yourself!</p>
+					
+					<p ref="aboutIntroduction">hai if you found this page congrats lol.. this page was meant for some beta testing and shit</p>
 
-					<p ref="aboutParagraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-	molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-	numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-	optio, eaque rerum!</p>
-
-					<p ref="aboutParagraph2"> Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-	nihil, eveniet aliquid culpa officia aut.</p>
+					<p ref="aboutParagraph1">so yeh while ur at it you can take a look around</p>
 
 				</div>
 			</section>
-
-			<!-- projects page -->
-      <section style="background-image: url('Images/Background Images/backgroundImage3.jpg'); height: 150%;">
-			
-				<div id="projectsPage">
-					<div id="projectsTop">
-						<h2 id="projectsPageTitle">Projects</h2>
-
-						<p ref="projectIntroduction">Here are a few of my projects:</p>
-
-					</div>
-
-					<div class="gridContainer">
-						<div class="gridChild">
-							<details>
-								<summary>
-									<h3 ref="projectName1">Project 1</h3> <!-- add a title -->
-								</summary>
-
-								<!-- Remove onclick="return false;", and add href="link to project" where you can 
-								add a link to project. -->
-								<a class="projectLinks" href="javascript: void(0);">
-									<img class="projectImages"src="Images/Project Images/projectImage1.jpg" width="300px" height="200px">
-								</a>
-								
-								<p ref="projectDescription1">Description of project 1</p> <!-- add a description to your project -->
-
-								<div class="for-edit">
-										<br><label>Project url</label><br>
-										<input class="input-edit input-projectURL for-edit" placeholder="Project url: " value="" oninput="refreshProjectData(event);">
-										<br><label>Image source</label><br>
-										<input class="input-edit for-edit  input-imageSource" placeholder="Image source: " value="Images/Project Images/projectImage1.jpg" oninput="refreshProjectData(event);">
-										<br>
-								</div>
-							</details>
-						</div>
-
-						<div class="gridChild">
-							<details>
-								<summary>	
-									<h3 ref="projectName2">Project 2</h3> <!-- add a title -->
-								</summary>
-
-								<a href="javascript: void(0);" class="projectLinks">
-									<img class="projectImages" src="Images/Project Images/projectImage2.jpg" width="300px" height="200px">
-								</a>
-										<p ref="projectDescription2">Description of project 2</p> <!-- add a description to your project -->
-										<div class="for-edit">
-										<br><label>Project url</label><br>
-										<input class="input-edit input-projectURL for-edit" placeholder="Project url: " value="" oninput="refreshProjectData(event);">
-										<br><label>Image source</label><br>
-										<input class="input-edit for-edit  input-imageSource" placeholder="Image source: " value="Images/Project Images/projectImage1.jpg" oninput="refreshProjectData(event);">
-										<br>
-								</div>
-							</details>
-						</div>
-						
-						<div class="gridChild">
-							<details>
-								<summary>	
-									<h3 ref="projectName3">Project 3</h3> <!-- add a title -->
-								</summary>
-								
-								<a href="javascript: void(0);" class="projectLinks">
-									<img class="projectImages" src="Images/Project Images/projectImage3.jpg" width="300px" height="200px">
-								</a>
-										<p ref="projectDescription3">Description of project 3</p> <!-- add a description to your project -->
-										<div class="for-edit">
-										<br><label>Project url</label><br>
-										<input class="input-edit input-projectURL for-edit" placeholder="Project url: " value="" oninput="refreshProjectData(event);">
-										<br><label>Image source</label><br>
-										<input class="input-edit for-edit  input-imageSource" placeholder="Image source: " value="Images/Project Images/projectImage1.jpg" oninput="refreshProjectData(event);">
-										<br>
-								</div>
-							</details>					
-						</div>
-
-						<div class="gridChild">
-							<details>
-								<summary>	
-									<h3 ref="projectName4">Project 4</h3> <!-- add a title -->
-								</summary>
-								
-								<a href="javascript: void(0);"class="projectLinks">
-									<img class="projectImages" src="Images/Project Images/projectImage4.jpg" width="300px" height="200px">
-								</a>
-										<p ref="projectDescription4">Description of project 4</p> <!-- add a description to your project -->
-										<div class="for-edit">
-										<br><label>Project url</label><br>
-										<input class="input-edit input-projectURL for-edit" placeholder="Project url: " value="" oninput="refreshProjectData(event);">
-										<br><label>Image source</label><br>
-										<input class="input-edit for-edit  input-imageSource" placeholder="Image source: " value="Images/Project Images/projectImage1.jpg" oninput="refreshProjectData(event);">
-										<br>
-								</div>
-							</details>
-						</div>
-
-						<div class="gridChild">
-							<details>
-								<summary>	
-									<h3 ref="projectName5">Project 5</h3> <!-- add a title -->
-								</summary>
-								<a href="javascript: void(0);" class="projectLinks">
-									<img class="projectImages" src="Images/Project Images/projectImage5.jpg" width="300px" height="200px">
-								</a>
-										<p ref="projectDescription5">Description of project 5</p> <!-- add a description to your project -->
-										<div class="for-edit">
-										<br><label>Project url</label><br>
-										<input class="input-edit input-projectURL for-edit" placeholder="Project url: " value="" oninput="refreshProjectData(event);">
-										<br><label>Image source</label><br>
-										<input class="input-edit for-edit  input-imageSource" placeholder="Image source: " value="Images/Project Images/projectImage1.jpg" oninput="refreshProjectData(event);">
-										<br>
-								</div>
-							</details>
-						</div>
-
-						<div class="gridChild">
-							<details>
-								<summary>	
-									<h3 ref="projectName6">Project 6</h3> <!-- add a title -->
-								</summary>
-
-								<a href="javascript: void(0);" class="projectLinks">
-									<img class="projectImages" src="Images/Project Images/projectImage6.jpg" width="300px" height="200px">
-								</a>
-										<p ref="projectDescription6">Description of project 6</p> <!-- add a description to your project -->
-										<div class="for-edit">
-										<br><label>Project url</label><br>
-										<input class="input-edit input-projectURL for-edit" placeholder="Project url: " value="" oninput="refreshProjectData(event);">
-										<br><label>Image source</label><br>
-										<input class="input-edit for-edit input-imageSource" placeholder="Image source: " value="Images/Project Images/projectImage1.jpg" oninput="refreshProjectData(event);">
-										<br>
-								</div>
-							</details>
-						</div>
 				</div>
 			</section>
 
-			<!-- contact page -->
+		
       <section style="background-image: url('Images/Background Images/backgroundImage4.jpg'); height: 120%;">
 				<div id="contactPage">
 
 						<h2 id="contactPageTitle">Contact</h2>
 
-						<p ref="contactSentence">Check me out and get in touch!</p>
+						<p ref="contactSentence">You can find me on a few places..</p>
 
-						<!-- Links to social media -->
+				
 						<div id="icons">
-							<a href="javascript: void(0);" id="social-icon-facebook"><i class="fa fa-facebook fa-2x"></i></a>
-							<a href="javascript: void(0);" id="social-icon-twitter"><i class="fa fa-twitter fa-2x"></i></a>
-							<a href="javascript: void(0);" id="social-icon-linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
-							<a href="javascript: void(0);" id="social-icon-instagram"><i class="fa fa-instagram fa-2x"></i></a>
-							<a href="javascript: void(0);" id="social-icon-snapchat"><i class="fa fa-snapchat-ghost fa-2x"></i></a>
 							<a href="javascript: void(0);" id="social-icon-github"><i class="fa fa-github fa-2x"></i></a>
-							<a href="javascript: void(0);" id="social-icon-youtube"><i class="fa fa-youtube fa-2x"></i></a>
-							<a href="javascript: void(0);" id="social-icon-discord"><i class="fab fa-discord fa-2x"></i></a>
-							<!-- replace email@example.com with your own email -->
-							<a href="mailto:email@example.com" id="social-icon-email"><i class="far fa-envelope fa-2x"></i></a>
 						</div>
 					</div>
 					
 					<div class="for-edit for-edit-icons">
 						<div>
-							<i>Leaving a field empty will hide the associated icon</i>
-							<br><label>Facebook profile URL:</label>
-							<input class="input-edit for-edit" for="facebook" placeholder="Profile URL: " value="https://www.facebook.com/" oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-							<br><label>Twitter profile URL:</label>
-							<input class="input-edit for-edit" for="twitter" placeholder="Profile URL: " value="https://twitter.com/" oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-
-							<br><label>Linkedin profile URL:</label>
-							<input class="input-edit for-edit" for="linkedin" placeholder="Profile URL: " value="https://www.linkedin.com/"  oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-															
-							<br><label>Instagram profile URL:</label>
-							<input class="input-edit for-edit" for="instagram" placeholder="Profile URL: " value="https://www.instagram.com/"  oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-						</div>
-
-						<div>
-							<br><label>Snapchat profile URL:</label>
-							<input class="input-edit for-edit" for="snapchat" placeholder="Profile URL: " value="https://www.snapchat.com/"  oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-
+							
 							<br><label>Github profile URL:</label>
-							<input class="input-edit for-edit" for="github" placeholder="Profile URL: " value="https://www.github.com/"  oninput="refreshIcons(event);" onfocus="this.select();">
+							<input class="input-edit for-edit" for="github" placeholder="Profile URL: " value="https://www.github.com/hnitch"  oninput="refreshIcons(event);" onfocus="this.select();">
 							<br>
 
-							<br><label>Youtube profile URL:</label>
-							<input class="input-edit for-edit" for="youtube" placeholder="Profile URL: " value="https://www.youtube.com/channel/"  oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-
-							<br><label>Discord invite link:</label>
-							<input class="input-edit for-edit" for="discord" placeholder="Invite link: " value="https://www.discord.gg/"  oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
-
-							<br><label>Your email:</label><br>
-							<input class="input-edit for-edit" for="email" placeholder="Your email: " value="john@smith.com"  oninput="refreshIcons(event);" onfocus="this.select();">
-							<br>
 						</div>
 					</div>
-
-					<!-- <a class
-					</div>		
-
-				="for-edit" id="download_button" onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" download="portfolio.html">Download<br><span style="font-size: 10px;">your edited template</span></a> -->
 
 					
 			</section>
 		
 			
-			<!-- footer -->
+			
 			<section id="footer"> 
-				<small>&#169; <span>2021 Bookie0</span></small> 
+				<small>&#169; <span>{ 2021 } | hnitch.gq | beta</span></small> 
 					
 			</section>
 
-			<!-- for more sections -->
-      <!--<section style="background-image: url('Images/Background Images/backgroundImage5.jpg');"></section>-->
-      <!--<section style="background-image: url('Images/Background Images/backgroundImage6.jpg');"></section>-->
+			
     </main>
 
     <script src="script.js"></script>
