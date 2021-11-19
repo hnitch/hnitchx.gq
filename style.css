@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Lexend+Peta&display=swap');
+
+:root {
+	--text-color: #ecfcfc;
+	--text-shadow-color: #3696d7;
+	--background-color: #07142d;
+}
+
+version {
+    display: none;
+}
+
+html, body, main 
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+	scroll-behavior: smooth; /* for jumping to place on page, to make it smooth */
+}
+
+body:not(.edit) .for-edit {
+	display: none !important;
+}
+
+body.edit section:first-of-type {
+    margin-top: 40px;
+}
+
+main > section 
+{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 /* the <h2>s here are used for the title of each page */
+{
+	font-family: 'Orbitron', sans-serif;
+	color: var(--text-color);
+	font-weight: bold;
+	font-size: 35px;
+	text-shadow: 5px 5px 10px var(--text-shadow-color);
+}
+
+p
+{
+	color: var(--text-color);
+	font-size: 20px;
+}
+
+
+/* style for home page */ 
+#name /* your name */
+{
+	margin-left: 30px;
+	text-shadow: 5px 5px 10px var(--text-shadow-color);
+	font-family: 'Orbitron', sans-serif;
+	color: var(--text-color);
+	font-size: 70px;	
+  padding: .67rem 1rem .67rem 1rem;
+  margin: 0;
+}
+
+
+#profilePicture /* your profile picture */
+{
+	margin-right: 30px;
+	margin-top: 20px;
+	box-shadow: 0 20px 20px 0 rgba(252, 0, 0, 0.2), 0 20px 20px 0 rgba(25, 112, 212, 0.19);
+	position: fixed;
+  top: 1rem;
+  /* right: 1rem; */
+  left: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
+#profilePicture.right
+{
+	/* float: right; */
+	right: 1rem;
+	left: unset;
+	/* margin: 1rem; */
+}
+
+     
+@keyframes run {
+    from { right: 0;}
+    to {right: 50%;}
+}
+
+
+#menu /* holds the links to different sections of the site */
+{
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+a.topLinks /* links to go to the about, project, etc. */
+{
+	margin-left: 30px;
+	display: inline;
+	font-size: 35px;
+	border-radius: 8px;
+	text-shadow: 0px 0px 3px var(--text-color);
+	line-height: 1.7em;
+
+}
+
+a.topLinks:link, a.topLinks:visited /* to keep same color when visited */
+{
+	color: #65a9f0;
+  background-color: transparent;
+  text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+a.topLinks:hover 
+{
+  color: #d98b98;
+  text-decoration: underline;
+	font-size: 37px;
+	text-shadow: 0px 0px 20px #d98b98;
+}
+
+a.topLinks:active 
+{
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+/* style for about page */
+#aboutPage
+{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 600px;
+	text-align: left;
+	font-family: 'Space Mono', monospace;
+}
+
+/* style for projects page */
+#projectsPage
+{
+	padding-top: 50px;
+	padding-left: 300px;
+	padding-right: 50px;
+	text-align: left;
+	font-family: 'Space Mono', monospace;
+}
+
+#projectsTop
+{
+	text-align: center;
+}
+
+
+a.projectLinks /* when you click a project */
+{
+	-webkit-box-shadow: 0 0 20px #d98b98;
+	box-shadow: 0 0 20px #d98b98;
+}
+
+
+a.projectLinks:link, a.projectLinks:visited /* to keep same color when visited */
+{ 
+	color: var(--text-color);
+  background-color: transparent;
+  text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+/* to keep the projects in a sort of grid/aligned */
+.gridContainer /* holds all the projects */
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	border-radius: 5px;
+
+}
+
+.gridChild /* each project */
+{
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: var(--text-color);
+	text-align: center;
+}
+
+/* project images */
+.projectImages
+{
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px #fff;
+	transition-duration: 0.5s;
+}
+
+.projectImages:hover
+{
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 20px #d98b98;
+  box-shadow: 0 0 20px #d98b98;
+	-ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+	transition-duration: 0.7s;	
+}
+
+/* for each project, when you click it, it gives more detail */
+details 
+{
+	border: 2px solid #64829c;
+	border-radius: 8px;
+	padding: 0.5rem;
+	-webkit-box-shadow: 0 0 20px #d98b98;
+  box-shadow: 0 0 20px #d98b98;
+}
+
+details[open] summary ~ * 
+{
+	animation: sweep .8s ease-in-out; /* uses the sweep animation below */
+}
+
+details > summary 
+{
+	list-style-type: none;
+}
+
+details > summary::-webkit-details-marker 
+{
+	display: none;
+}
+
+details > summary::before 
+{
+	content: '▶️'; /* will have the emoji right arrow */
+}
+
+details[open] > summary::before 
+{
+	content: '🔽'; /* will have the emoji down arrow when clicked */
+}
+
+
+details[open] > summary 
+{
+	margin-bottom: 0.5rem;
+}
+
+/* animation when you click on a project */
+@keyframes sweep 
+{
+  0% 
+	{
+		opacity: 0; 
+		margin-left: -10px
+	}
+  100%
+	{
+		opacity: 1;
+		margin-left: 0px
+	}
+}
+
+/* style for contact page */
+#contactPage
+{
+	padding-top: 50px;
+	text-align: center;
+	font-family: 'Space Mono', monospace;
+}
+
+.fa, .far, .fab /* for the contact icons */
+{
+  padding: 20px;
+  font-size: 100px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+	box-shadow: 0px 0px 20px #a4dec4;
+	transition-duration: 0.5s;
+	background: #65a9f0;
+  color: var(--text-color);
+}
+
+.fa:hover, .far:hover, .fab:hover
+{
+	opacity: 0.7;
+	-webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px #fff;
+	-ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+	transition-duration: 0.7s;		
+}
+
+.fa-download
+{
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+#icons /* div containing all the icons */
+{
+	text-align: center;
+}
+
+#footer /* footer at bottom with copyright */
+{
+	background-color: var(--background-color);
+	/* background-image: linear-gradient(315deg, var(--background-color) 0%, #28313b 74%); */
+	color: var(--text-color);
+	font-family: Century;
+	line-height: 38px;
+	-webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px #fff;
+	text-align: center;
+	width: 100%;
+	height: 5%;
+  margin: 0;
+}
+
+/* scrollbar */
+::-webkit-scrollbar 
+{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track 
+{
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb 
+{
+  background: #5d6c8b;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+	background: #3b4965;
+}
+
+.input-edit 
+{
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: 'Space Mono', monospace;
+	width: 90%;
+	height: 30px;
+	border-radius: 4px;
+	/* border: 2px solid #64829c; */
+	border: none !important;
+	margin-bottom: 10px;
+}
+
+#download_button
+{
+	border: none !important;
+	border-radius: 8px;
+	border-width: 0px;
+	background-color: var(--text-shadow-color);
+	display: inline-block;
+	padding: 14px 28px;
+	font-family: 'Lexend Peta', sans-serif;
+	text-decoration: none;
+	color: var(--text-color);
+	text-align: center;
+	margin-left: 30px;
+	transition-duration: 0.5s;
+}
+
+#download_button:hover 
+{
+	-webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 5px #fff;
+	transition-duration: 0.7s;
+	cursor: pointer;
+	background-color: #1872ae;
+}
+
+#toggleEdit
+{
+	background-color: transparent;
+	border: none !important;
+}
+
+
+#toggleEdit:hover:after
+{
+	margin-top: 32px;
+	content: "Edit template";
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#showEditMode
+{
+	background-color: var(--text-shadow-color);
+	color: var(--text-color);
+	font-family: Century;
+	line-height: 38px;
+	-webkit-box-shadow: 0 0 20px #fff;
+	box-shadow: 0 0 20px #fff;
+	text-align: center;
+	width: 100%;
+	max-height: 40px;
+	height: 100%;
+	margin: 0;
+	margin-top: 0px;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+	display: block;
+}
+
+
+
+.input-profilePictureSource 
+{
+  /* Firefox */
+	width: -moz-calc(100% - 400px);
+	/* WebKit */
+	width: -webkit-calc(100% - 400px);
+	/* Opera */
+	width: -o-calc(100% - 400px);
+	/* Standard */
+	width: calc(100% - 400px);
+
+	min-width: 200px;
+}
+
+.for-edit-icons 
+{
+	/* max-width: 600px; */
+	width: 100%;
+	margin-right: auto;
+	margin-left: 10px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.for-edit label {
+	color: var(--text-color);
+}
+
+.collapsible 
+{
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+
+.collapsible:after 
+{
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.content 
+{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.input-profilePictureSource {
+    margin-left: 10px;
+}
