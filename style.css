@@ -17,7 +17,7 @@ html, body, main
   width: 100%;
   height: 100%;
   margin: 0;
-	scroll-behavior: smooth; /* for jumping to place on page, to make it smooth */
+	scroll-behavior: smooth; 
 }
 
 body:not(.edit) .for-edit {
@@ -36,7 +36,7 @@ main > section
   background-size: cover;
 }
 
-h2 /* the <h2>s here are used for the title of each page */
+h2 
 {
 	font-family: 'Orbitron', sans-serif;
 	color: var(--text-color);
@@ -52,8 +52,8 @@ p
 }
 
 
-/* style for home page */ 
-#name /* your name */
+
+#name 
 {
 	margin-left: 30px;
 	text-shadow: 5px 5px 10px var(--text-shadow-color);
@@ -65,14 +65,14 @@ p
 }
 
 
-#profilePicture /* your profile picture */
+#profilePicture 
 {
 	margin-right: 30px;
 	margin-top: 20px;
 	box-shadow: 0 20px 20px 0 rgba(252, 0, 0, 0.2), 0 20px 20px 0 rgba(25, 112, 212, 0.19);
 	position: fixed;
   top: 1rem;
-  /* right: 1rem; */
+  
   left: 1rem;
   width: 200px;
   height: 200px;
@@ -82,10 +82,10 @@ p
 
 #profilePicture.right
 {
-	/* float: right; */
+	
 	right: 1rem;
 	left: unset;
-	/* margin: 1rem; */
+	
 }
 
      
@@ -95,7 +95,7 @@ p
 }
 
 
-#menu /* holds the links to different sections of the site */
+#menu
 {
 	text-align: center;
 	font-family: 'Orbitron', sans-serif;
@@ -103,7 +103,7 @@ p
 	margin-top: 60px;
 }
 
-a.topLinks /* links to go to the about, project, etc. */
+a.topLinks 
 {
 	margin-left: 30px;
 	display: inline;
@@ -114,7 +114,7 @@ a.topLinks /* links to go to the about, project, etc. */
 
 }
 
-a.topLinks:link, a.topLinks:visited /* to keep same color when visited */
+a.topLinks:link, a.topLinks:visited 
 {
 	color: #65a9f0;
   background-color: transparent;
@@ -136,7 +136,7 @@ a.topLinks:active
   text-decoration: underline;
 }
 
-/* style for about page */
+
 #aboutPage
 {
 	padding-top: 50px;
@@ -146,7 +146,7 @@ a.topLinks:active
 	font-family: 'Space Mono', monospace;
 }
 
-/* style for projects page */
+
 #projectsPage
 {
 	padding-top: 50px;
@@ -162,14 +162,14 @@ a.topLinks:active
 }
 
 
-a.projectLinks /* when you click a project */
+a.projectLinks
 {
 	-webkit-box-shadow: 0 0 20px #d98b98;
 	box-shadow: 0 0 20px #d98b98;
 }
 
 
-a.projectLinks:link, a.projectLinks:visited /* to keep same color when visited */
+a.projectLinks:link, a.projectLinks:visited 
 { 
 	color: var(--text-color);
   background-color: transparent;
@@ -177,8 +177,8 @@ a.projectLinks:link, a.projectLinks:visited /* to keep same color when visited *
 	transition-duration: 0.5s;
 }
 
-/* to keep the projects in a sort of grid/aligned */
-.gridContainer /* holds all the projects */
+
+.gridContainer 
 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -187,7 +187,7 @@ a.projectLinks:link, a.projectLinks:visited /* to keep same color when visited *
 
 }
 
-.gridChild /* each project */
+.gridChild 
 {
 	border-radius: 5px;
 	margin-top: 20px;
@@ -198,7 +198,6 @@ a.projectLinks:link, a.projectLinks:visited /* to keep same color when visited *
 	text-align: center;
 }
 
-/* project images */
 .projectImages
 {
 	border-radius: 8px;
@@ -218,7 +217,7 @@ a.projectLinks:link, a.projectLinks:visited /* to keep same color when visited *
 	transition-duration: 0.7s;	
 }
 
-/* for each project, when you click it, it gives more detail */
+
 details 
 {
 	border: 2px solid #64829c;
@@ -230,7 +229,7 @@ details
 
 details[open] summary ~ * 
 {
-	animation: sweep .8s ease-in-out; /* uses the sweep animation below */
+	animation: sweep .8s ease-in-out;
 }
 
 details > summary 
@@ -245,12 +244,12 @@ details > summary::-webkit-details-marker
 
 details > summary::before 
 {
-	content: '▶️'; /* will have the emoji right arrow */
+	content: '▶️'; 
 }
 
 details[open] > summary::before 
 {
-	content: '🔽'; /* will have the emoji down arrow when clicked */
+	content: '🔽'; 
 }
 
 
@@ -259,7 +258,7 @@ details[open] > summary
 	margin-bottom: 0.5rem;
 }
 
-/* animation when you click on a project */
+
 @keyframes sweep 
 {
   0% 
@@ -274,7 +273,7 @@ details[open] > summary
 	}
 }
 
-/* style for contact page */
+
 #contactPage
 {
 	padding-top: 50px;
@@ -282,7 +281,7 @@ details[open] > summary
 	font-family: 'Space Mono', monospace;
 }
 
-.fa, .far, .fab /* for the contact icons */
+.fa, .far, .fab 
 {
   padding: 20px;
   font-size: 100px;
@@ -316,15 +315,15 @@ details[open] > summary
 	margin-right: 5px;
 }
 
-#icons /* div containing all the icons */
+#icons 
 {
 	text-align: center;
 }
 
-#footer /* footer at bottom with copyright */
+#footer
 {
 	background-color: var(--background-color);
-	/* background-image: linear-gradient(315deg, var(--background-color) 0%, #28313b 74%); */
+	
 	color: var(--text-color);
 	font-family: Century;
 	line-height: 38px;
@@ -336,7 +335,7 @@ details[open] > summary
   margin: 0;
 }
 
-/* scrollbar */
+
 ::-webkit-scrollbar 
 {
   width: 10px;
@@ -365,7 +364,7 @@ details[open] > summary
 	width: 90%;
 	height: 30px;
 	border-radius: 4px;
-	/* border: 2px solid #64829c; */
+
 	border: none !important;
 	margin-bottom: 10px;
 }
@@ -433,13 +432,13 @@ details[open] > summary
 
 .input-profilePictureSource 
 {
-  /* Firefox */
+
 	width: -moz-calc(100% - 400px);
-	/* WebKit */
+	
 	width: -webkit-calc(100% - 400px);
-	/* Opera */
+	
 	width: -o-calc(100% - 400px);
-	/* Standard */
+	
 	width: calc(100% - 400px);
 
 	min-width: 200px;
@@ -447,7 +446,7 @@ details[open] > summary
 
 .for-edit-icons 
 {
-	/* max-width: 600px; */
+	
 	width: 100%;
 	margin-right: auto;
 	margin-left: 10px;
