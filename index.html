@@ -32,20 +32,21 @@
 	     
 	<div id="showEditMode" class="for-edit">Editing mode</div>
 
-
+<div id="content-desktop">
     <img id="profilePicture" src="https://i.imgur.com/Y7TbdFI.png" class="right">
-
+</div>
+	
     <main>
       <section style="background-image: url('https://i.imgur.com/deHXvAr.jpeg');">
 
 				<h1 id="name" ref="name">hnitchx.gq</h1>
-
+<div id="content-desktop">
 				<div class="for-edit">
 					<br><label style="margin-left: 10px;">Pfp</label><br>
 					<input class="input-edit for-edit  input-profilePictureSource" placeholder="Image source: " value="https://i.imgur.com/Y7TbdFI.png" oninput="refreshProfilePicture(event);">
 					<br>
 				</div>
-
+</div>
 				<button class="collapsible" id="toggleEdit" onclick="allowEdit();"><i class="far fa-edit fa-2x"></i></button>
 
 				<div class="content for-edit">
@@ -63,8 +64,10 @@
       </section>	
 
 		
-      <section style="background-image: url('Images/Background Images/backgroundImage2.jpg');">
-				<div id="aboutPage">
+      <section style="background-image: url('https://i.imgur.com/6SZqlrj.jpeg');">
+				
+	      <div id="content-desktop">
+	      <div id="aboutPage">
 					<h2 id="aboutPageTitle">About</h2>
 
 					
@@ -73,8 +76,12 @@
 					<p ref="aboutParagraph1">so yeh while ur at it you can take a look around</p>
 
 				</div>
-			</section>
-				</div>
+			</div>
+		      </section>
+				<div id="content-mobile">
+					<p>this section is not yet available on mobile... to view switch to desktop 🖥</p>	
+	    </div>
+	    </div>
 			</section>
 
 		
