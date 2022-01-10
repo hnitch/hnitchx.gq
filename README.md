@@ -1,5 +1,5 @@
 # hnitchx.gq
-(for any bug with this website or anything you want to report you can use the issues section for THIS repository)
+**(for any bug with this website or anything you want to report you can use the issues section for THIS repository)**
 
 official hnitch beta testing website for (https://hnitch.ml) and (https://tunesmusic.tk)
 
